@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="//static.anyflip.com/plugin/LightBox/js/anyflp-light-box-api-min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="about">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-md-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToPro()">Website</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToDes()">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToCont()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container header-text" data-aos="fade-up" id="header-text">
+            <h2>Hello, I'm</h2>
+            <h1>Alya Razali</h1>
+            <p class="qq">I Love</p>
+            <p class="typewrite qq" data-period="1000" data-type='[ "Bringing Ideas to Life.", 
+                            "Design.", "Frontend Dev.", 
+                            "Movies.", "Swimming." ]'></p>
+        </div>
+    </header>
+
+    <!-- <section class="project" id="project">
+        <div class="container">
+            <h2 class="section-headings">Projects</h2>
+
+            <div class="myCard">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex align-items-stretch">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-img" id="xind">
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <a href="#!">View</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <a href="#!">
+                                    <h2>Xind Website</h2>
+                                    <p>Lorem ipsumtur, lorem iorem ipsum dolor sit amet consectetur, lorem iorem ipsum
+                                        dolor sit amet consectetur, lorem ipsum dolor</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-stretch">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-img" id="xapp">
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <a href="#!">View</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <a href="#!">
+                                    <h2>Xapp Website</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, lorem iorem ipsum dolor sit amet
+                                        consectetur, lorem iorem ipsum dolor sit amet consectetur, lorem iorem ipsum
+                                        dolor sit amet consectetur, lorem ipsum dolor</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="project">
+        <div class="container">
+
+            <h2 class="section-headings">Website</h2>
+            <div class="inner">&nbsp;</div>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <a href="https://alyarazali.github.io/xindustrieswp/" class="dd">
+                        <div class="box" style="background: url('../images/xind.png');"></div>
+                    </a>
+                    <h4 class="text-center">X-Industries</h4>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="https://alyarazali.github.io/xapp/" class="dd">
+                        <div class="box" style="background: url('../images/xapp.png');"></div>
+                    </a>
+                    <h4 class="text-center">X-App</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="design">
+        <div class="container">
+
+            <h2 class="section-headings">Design</h2>
+            <div class="inner">&nbsp;</div>
+            <div class="row ">
+                <div class="col-12 col-lg-4 col-md-6 myCards">
+                    <div class="bo" >
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content theimg">
+                            <div class="caption"></div>
+                        </div>
+                        <img class="des myImg" src="../images/car.jpg" alt="Mustang Typography"
+                            style="width:100%;max-width:300px">
+                    </div>
+
+                    <h4 class="text-center">Typography</h4>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 myCards">
+                    <div class="bo">
+                        <img class="des sdes" src='https://online.anyflip.com/zjklm/jpxb/files/shot.jpg'
+                            data-rel='fh5-light-box-demo' data-href='http://online.anyflip.com/zjklm/jpxb/'
+                            data-width='400' data-height='250' data-title='Heroic Flick'>
+                    </div>
+
+                    <h4 class="text-center">Magazine</h4>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 myCards">
+                    <div class="bo">
+                        <div id="myModal2" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content theimg">
+                            <div class="caption"></div>
+                        </div>
+                        <img class="des myImg" src="../images/broch.png" alt="Brochure"
+                            style="width:100%;max-width:300px">
+                    </div>
+
+                    <h4 class="text-center">Brochure</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="text-center" id="contact">
+        <div class="container">
+            <div class="footer-text">
+                <h2>AR</h2>
+                <h3>Contact Me!</h3>
+                <h5>alyanadhirah97@gmail.com</h5>
+            </div>
+
+            <div class="footer-social-icon">
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/in/alya-nadhirah-razali-/"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="https://github.com/alyarazali"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://codepen.io/AlyaRazali"><i class="fab fa-codepen"></i></a></li>
+                </ul>
+            </div>
+            <!-- <div class="footer-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Website</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div> -->
+            <!-- Foooter Text-->
+            <div class="copyright-text">
+
+                <p>Copyright ©2020 AR</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
